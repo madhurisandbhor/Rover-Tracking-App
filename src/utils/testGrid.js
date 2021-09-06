@@ -1,15 +1,15 @@
 import {
-  x,
-  y,
-  d,
   directionsToRight,
   directionsToLeft,
+  defaultDir,
+  x,
+  y,
   maxX,
   maxY,
-} from './constants'
+} from 'utils/constants'
 
 const testGrid = (testString) => {
-  const roverPosition = [x, y, d]
+  const roverPosition = [x, y, defaultDir]
   const testArr = testString.split('')
 
   for (let i = 0; i < testArr.length; i++) {
